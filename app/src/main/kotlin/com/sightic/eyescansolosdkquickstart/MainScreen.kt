@@ -1,5 +1,4 @@
-package com.sightic.irisintegratequickstart
-
+package com.sightic.eyescansolosdkquickstart
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -8,10 +7,10 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.platform.LocalContext
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.sightic.irisintegrate.SighticSupportedDevice
-import com.sightic.irisintegratequickstart.viewmodel.Action
-import com.sightic.irisintegratequickstart.viewmodel.MainViewModel
-import com.sightic.irisintegratequickstart.views.ContentView
+import com.sightic.eyescansolosdk.SighticSupportedDevice
+import com.sightic.eyescansolosdkquickstart.viewmodel.Action
+import com.sightic.eyescansolosdkquickstart.viewmodel.MainViewModel
+import com.sightic.eyescansolosdkquickstart.views.ContentView
 import kotlinx.coroutines.launch
 
 

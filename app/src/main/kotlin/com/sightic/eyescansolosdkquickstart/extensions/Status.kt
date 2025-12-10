@@ -1,9 +1,9 @@
-package com.sightic.irisintegratequickstart.extensions
+package com.sightic.eyescansolosdkquickstart.extensions
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
-import com.sightic.irisintegrate.SighticSupportedDevice
-import com.sightic.irisintegratequickstart.R
+import com.sightic.eyescansolosdk.SighticSupportedDevice
+import com.sightic.eyescansolosdkquickstart.R
 
 @Composable
 fun SighticSupportedDevice.Status.asReadableStatus() = when (this) {

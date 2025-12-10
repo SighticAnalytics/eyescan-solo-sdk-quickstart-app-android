@@ -1,4 +1,4 @@
-package com.sightic.irisintegratequickstart.ui.theme
+package com.sightic.eyescansolosdkquickstart.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

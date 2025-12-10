@@ -1,4 +1,4 @@
-package com.sightic.irisintegratequickstart.views
+package com.sightic.eyescansolosdkquickstart.views
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -14,8 +14,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.sightic.irisintegratequickstart.R
-import com.sightic.irisintegratequickstart.ui.theme.IRISIntegrateQuickstartTheme
+import com.sightic.eyescansolosdkquickstart.R
+import com.sightic.eyescansolosdkquickstart.ui.theme.EyeScanSoloSDKQuickstartTheme
 
 @Composable
 fun DeviceUnsupportedView(statusMessage: String) {
@@ -49,7 +49,7 @@ fun DeviceUnsupportedView(statusMessage: String) {
 @Preview(showBackground = true)
 @Composable
 private fun DeviceUnsupportedViewPreview() {
-    IRISIntegrateQuickstartTheme {
+    EyeScanSoloSDKQuickstartTheme {
         DeviceUnsupportedView(stringResource(R.string.device_unsupported_hardware))
     }
 }

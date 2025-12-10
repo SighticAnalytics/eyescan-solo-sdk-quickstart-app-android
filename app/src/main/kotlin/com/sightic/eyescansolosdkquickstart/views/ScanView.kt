@@ -1,8 +1,8 @@
-package com.sightic.irisintegratequickstart.views
+package com.sightic.eyescansolosdkquickstart.views
 
 import androidx.compose.runtime.Composable
-import com.sightic.irisintegrate.SighticView
-import com.sightic.irisintegratequickstart.viewmodel.Action
+import com.sightic.eyescansolosdk.SighticView
+import com.sightic.eyescansolosdkquickstart.viewmodel.Action
 
 @Composable
 fun ScanView(onAction: (Action) -> Unit) {

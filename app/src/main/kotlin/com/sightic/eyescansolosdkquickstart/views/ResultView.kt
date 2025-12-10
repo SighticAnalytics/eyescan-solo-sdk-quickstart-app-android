@@ -1,4 +1,4 @@
-package com.sightic.irisintegratequickstart.views
+package com.sightic.eyescansolosdkquickstart.views
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -7,13 +7,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
-import com.sightic.irisintegratequickstart.R
-import com.sightic.irisintegratequickstart.components.Header
-import com.sightic.irisintegratequickstart.components.HugeButton
-import com.sightic.irisintegratequickstart.ui.theme.Amber
-import com.sightic.irisintegratequickstart.ui.theme.Green
-import com.sightic.irisintegratequickstart.ui.theme.IRISIntegrateQuickstartTheme
-import com.sightic.irisintegratequickstart.viewmodel.Action
+import com.sightic.eyescansolosdkquickstart.R
+import com.sightic.eyescansolosdkquickstart.components.Header
+import com.sightic.eyescansolosdkquickstart.components.HugeButton
+import com.sightic.eyescansolosdkquickstart.ui.theme.Amber
+import com.sightic.eyescansolosdkquickstart.ui.theme.Green
+import com.sightic.eyescansolosdkquickstart.ui.theme.EyeScanSoloSDKQuickstartTheme
+import com.sightic.eyescansolosdkquickstart.viewmodel.Action
 
 @Composable
 fun ResultView(hasImpairment: Boolean, onAction: (Action) -> Unit) {
@@ -43,7 +43,7 @@ fun ResultView(hasImpairment: Boolean, onAction: (Action) -> Unit) {
 @Preview(showBackground = true)
 @Composable
 private fun StartViewPositivePreview() {
-    IRISIntegrateQuickstartTheme {
+    EyeScanSoloSDKQuickstartTheme {
         ResultView(true) {}
     }
 }
@@ -51,7 +51,7 @@ private fun StartViewPositivePreview() {
 @Preview(showBackground = true)
 @Composable
 private fun StartViewNegativePreview() {
-    IRISIntegrateQuickstartTheme {
+    EyeScanSoloSDKQuickstartTheme {
         ResultView(false) {}
     }
 }
