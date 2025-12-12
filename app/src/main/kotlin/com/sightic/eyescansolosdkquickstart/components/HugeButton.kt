@@ -1,4 +1,4 @@
-package com.sightic.irisintegratequickstart.components
+package com.sightic.eyescansolosdkquickstart.components
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
@@ -10,7 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import com.sightic.irisintegratequickstart.ui.theme.Blue
+import com.sightic.eyescansolosdkquickstart.ui.theme.Blue
 
 @Composable
 fun HugeButton(text: String, modifier: Modifier = Modifier, onClick: () -> Unit) {

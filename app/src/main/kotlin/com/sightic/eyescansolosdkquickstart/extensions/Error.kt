@@ -1,17 +1,17 @@
-package com.sightic.irisintegratequickstart.extensions
+package com.sightic.eyescansolosdkquickstart.extensions
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
-import com.sightic.irisintegrate.error.AlignmentError
-import com.sightic.irisintegrate.error.CameraPermissionDenied
-import com.sightic.irisintegrate.error.DevicePerformance
-import com.sightic.irisintegrate.error.InterruptedError
-import com.sightic.irisintegrate.error.NoNetworkConnection
-import com.sightic.irisintegrate.error.SighticError
-import com.sightic.irisintegrate.error.TimedOut
-import com.sightic.irisintegrate.error.UnexpectedError
-import com.sightic.irisintegrate.error.UnsupportedDevice
-import com.sightic.irisintegratequickstart.R
+import com.sightic.eyescansolosdk.error.AlignmentError
+import com.sightic.eyescansolosdk.error.CameraPermissionDenied
+import com.sightic.eyescansolosdk.error.DevicePerformance
+import com.sightic.eyescansolosdk.error.InterruptedError
+import com.sightic.eyescansolosdk.error.NoNetworkConnection
+import com.sightic.eyescansolosdk.error.SighticError
+import com.sightic.eyescansolosdk.error.TimedOut
+import com.sightic.eyescansolosdk.error.UnexpectedError
+import com.sightic.eyescansolosdk.error.UnsupportedDevice
+import com.sightic.eyescansolosdkquickstart.R
 
 @Composable
 fun SighticError.asReadableError() = when (this) {

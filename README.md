@@ -1,21 +1,25 @@
-# IRIS integrate QuickStart app
+# EyeScan Solo SDK QuickStart app
 
-The IRIS integrate QuickStart app is intended to show developers how to integrate the [IRIS integrate Android library](https://github.com/SighticAnalytics/iris-integrate-android).
+The EyeScan Solo SDK QuickStart app is intended to show developers how to integrate [EyeScan Solo SDK for Android](https://github.com/SighticAnalytics/eyescan-solo-sdk-android).
 
 ## Overview
 
 * The app is written in Kotlin/Compose.
-* It adds the [IRIS integrate Android library](https://github.com/SighticAnalytics/iris-integrate-android).
+* It depends on the [EyeScan Solo SDK](https://github.com/SighticAnalytics/eyescan-solo-sdk-android).
 
-## IRIS integrate documentation
+## EyeScan Solo SDK documentation
 
-* IRIS integrate documentation is [available here](https://sighticanalytics.github.io/iris-integrate-android/).
+* EyeScan Solo SDK documentation is [available here](https://sighticanalytics.github.io/eyescan-solo-sdk-android/).
 
 ## API key
 
-* The IRIS integrate library requires an API key.
+* EyeScan Solo SDK requires an API key.
+
 1. Open `local.properties` in the root directory.
 2. Add your API key as follows:
-```
+
+```properties
+# local.properties
+
 API_KEY="ADD_YOUR_API_KEY_HERE"
 ```

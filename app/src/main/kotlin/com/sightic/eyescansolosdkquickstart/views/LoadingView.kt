@@ -1,4 +1,4 @@
-package com.sightic.irisintegratequickstart.views
+package com.sightic.eyescansolosdkquickstart.views
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -10,8 +10,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.sightic.irisintegratequickstart.ui.theme.Gray
-import com.sightic.irisintegratequickstart.ui.theme.IRISIntegrateQuickstartTheme
+import com.sightic.eyescansolosdkquickstart.ui.theme.Gray
+import com.sightic.eyescansolosdkquickstart.ui.theme.EyeScanSoloSDKQuickstartTheme
 
 @Composable
 fun LoadingView() {
@@ -31,7 +31,7 @@ fun LoadingView() {
 @Preview
 @Composable
 private fun LoadingViewPreview() {
-    IRISIntegrateQuickstartTheme {
+    EyeScanSoloSDKQuickstartTheme {
         LoadingView()
     }
 }

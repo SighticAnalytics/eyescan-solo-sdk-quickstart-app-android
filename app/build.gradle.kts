@@ -7,13 +7,13 @@ plugins {
 }
 
 android {
-    namespace = "com.sightic.irisintegratequickstart"
-    compileSdk = 35
+    namespace = "com.sightic.eyescansolosdkquickstart"
+    compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.sightic.irisintegratequickstart"
+        applicationId = "com.sightic.eyescansolosdkquickstart"
         minSdk = 30
-        targetSdk = 35
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
@@ -49,8 +49,8 @@ android {
 
 dependencies {
 
-    // IRIS integrate
-    implementation(libs.irisintegrate)
+    // EyeScan Solo SDK
+    implementation(libs.eyescansolosdk)
 
     // Lifecycle aware view models
     implementation(libs.androidx.lifecycle.viewmodel.compose)

@@ -22,6 +22,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "IRIS integrate Quickstart"
+rootProject.name = "EyeScan Solo SDK Quickstart"
 
 include(":app")

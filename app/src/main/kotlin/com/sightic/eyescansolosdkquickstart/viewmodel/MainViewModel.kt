@@ -1,12 +1,12 @@
-package com.sightic.irisintegratequickstart.viewmodel
+package com.sightic.eyescansolosdkquickstart.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.sightic.irisintegrate.SighticRecording
-import com.sightic.irisintegrate.SighticResult
-import com.sightic.irisintegrate.SighticSupportedDevice
-import com.sightic.irisintegrate.error.SighticError
-import com.sightic.irisintegratequickstart.BuildConfig
+import com.sightic.eyescansolosdk.SighticRecording
+import com.sightic.eyescansolosdk.SighticResult
+import com.sightic.eyescansolosdk.SighticSupportedDevice
+import com.sightic.eyescansolosdk.error.SighticError
+import com.sightic.eyescansolosdkquickstart.BuildConfig
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch

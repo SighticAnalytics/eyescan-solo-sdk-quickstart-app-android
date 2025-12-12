@@ -1,13 +1,13 @@
-package com.sightic.irisintegratequickstart.views
+package com.sightic.eyescansolosdkquickstart.views
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import com.sightic.irisintegrate.error.AlignmentError
-import com.sightic.irisintegratequickstart.extensions.asReadableError
-import com.sightic.irisintegratequickstart.extensions.asReadableStatus
-import com.sightic.irisintegratequickstart.ui.theme.IRISIntegrateQuickstartTheme
-import com.sightic.irisintegratequickstart.viewmodel.Action
-import com.sightic.irisintegratequickstart.viewmodel.Screen
+import com.sightic.eyescansolosdk.error.AlignmentError
+import com.sightic.eyescansolosdkquickstart.extensions.asReadableError
+import com.sightic.eyescansolosdkquickstart.extensions.asReadableStatus
+import com.sightic.eyescansolosdkquickstart.ui.theme.EyeScanSoloSDKQuickstartTheme
+import com.sightic.eyescansolosdkquickstart.viewmodel.Action
+import com.sightic.eyescansolosdkquickstart.viewmodel.Screen
 
 @Composable
 fun ContentView(
@@ -29,7 +29,7 @@ fun ContentView(
 @Preview(showBackground = true)
 @Composable
 private fun ContentViewPreview() {
-    IRISIntegrateQuickstartTheme {
+    EyeScanSoloSDKQuickstartTheme {
         ContentView(
             screen = Screen.Start,
             onAction = {}
@@ -40,7 +40,7 @@ private fun ContentViewPreview() {
 @Preview(showBackground = true)
 @Composable
 private fun ContentViewInferencePreview() {
-    IRISIntegrateQuickstartTheme {
+    EyeScanSoloSDKQuickstartTheme {
         ContentView(
             screen = Screen.Inference,
             onAction = {}
@@ -51,7 +51,7 @@ private fun ContentViewInferencePreview() {
 @Preview(showBackground = true)
 @Composable
 private fun ContentViewResultPositivePreview() {
-    IRISIntegrateQuickstartTheme {
+    EyeScanSoloSDKQuickstartTheme {
         ContentView(
             screen = Screen.Result(true),
             onAction = {}
@@ -62,7 +62,7 @@ private fun ContentViewResultPositivePreview() {
 @Preview(showBackground = true)
 @Composable
 private fun ContentViewResultNegativePreview() {
-    IRISIntegrateQuickstartTheme {
+    EyeScanSoloSDKQuickstartTheme {
         ContentView(
             screen = Screen.Result(false),
             onAction = {}
@@ -73,7 +73,7 @@ private fun ContentViewResultNegativePreview() {
 @Preview(showBackground = true)
 @Composable
 private fun ContentViewErrorPreview() {
-    IRISIntegrateQuickstartTheme {
+    EyeScanSoloSDKQuickstartTheme {
         ContentView(
             screen = Screen.Error(AlignmentError.AltitudeTooLow),
             onAction = {}
