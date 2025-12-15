@@ -39,13 +39,13 @@ fun ResultView(hasImpairment: Boolean, onAction: (Action) -> Unit) {
     }
 }
 
-@Preview(showBackground = true)
+@Preview(showSystemUi = true)
 @Composable
 private fun StartViewPositivePreview() {
     EyeScanSoloSDKQuickstartTheme { ResultView(true) {} }
 }
 
-@Preview(showBackground = true)
+@Preview(showSystemUi = true)
 @Composable
 private fun StartViewNegativePreview() {
     EyeScanSoloSDKQuickstartTheme { ResultView(false) {} }

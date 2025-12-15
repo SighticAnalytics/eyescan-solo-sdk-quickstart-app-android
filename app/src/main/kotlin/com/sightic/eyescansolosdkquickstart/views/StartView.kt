@@ -29,7 +29,7 @@ fun StartView(onAction: (Action) -> Unit) {
     }
 }
 
-@Preview(showBackground = true)
+@Preview(showSystemUi = true)
 @Composable
 private fun StartViewPreview() {
     EyeScanSoloSDKQuickstartTheme { StartView {} }

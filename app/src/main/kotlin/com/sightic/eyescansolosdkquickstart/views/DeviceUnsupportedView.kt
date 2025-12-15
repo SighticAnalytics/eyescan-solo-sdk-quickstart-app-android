@@ -43,7 +43,7 @@ fun DeviceUnsupportedView(statusMessage: String) {
     }
 }
 
-@Preview(showBackground = true)
+@Preview(showSystemUi = true)
 @Composable
 private fun DeviceUnsupportedViewPreview() {
     EyeScanSoloSDKQuickstartTheme {

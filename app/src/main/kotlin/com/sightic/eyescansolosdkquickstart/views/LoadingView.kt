@@ -26,7 +26,7 @@ fun LoadingView() {
     }
 }
 
-@Preview
+@Preview(showSystemUi = true)
 @Composable
 private fun LoadingViewPreview() {
     EyeScanSoloSDKQuickstartTheme { LoadingView() }

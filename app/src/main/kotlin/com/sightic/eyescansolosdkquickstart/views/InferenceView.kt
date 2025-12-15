@@ -33,7 +33,7 @@ fun InferenceView() {
     }
 }
 
-@Preview(showBackground = true)
+@Preview(showSystemUi = true)
 @Composable
 private fun StartViewPreview() {
     EyeScanSoloSDKQuickstartTheme { InferenceView() }

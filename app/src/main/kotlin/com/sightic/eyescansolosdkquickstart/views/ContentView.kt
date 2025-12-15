@@ -22,31 +22,31 @@ fun ContentView(screen: Screen, onAction: (Action) -> Unit) {
     }
 }
 
-@Preview(showBackground = true)
+@Preview(showSystemUi = true)
 @Composable
 private fun ContentViewPreview() {
     EyeScanSoloSDKQuickstartTheme { ContentView(screen = Screen.Start, onAction = {}) }
 }
 
-@Preview(showBackground = true)
+@Preview(showSystemUi = true)
 @Composable
 private fun ContentViewInferencePreview() {
     EyeScanSoloSDKQuickstartTheme { ContentView(screen = Screen.Inference, onAction = {}) }
 }
 
-@Preview(showBackground = true)
+@Preview(showSystemUi = true)
 @Composable
 private fun ContentViewResultPositivePreview() {
     EyeScanSoloSDKQuickstartTheme { ContentView(screen = Screen.Result(true), onAction = {}) }
 }
 
-@Preview(showBackground = true)
+@Preview(showSystemUi = true)
 @Composable
 private fun ContentViewResultNegativePreview() {
     EyeScanSoloSDKQuickstartTheme { ContentView(screen = Screen.Result(false), onAction = {}) }
 }
 
-@Preview(showBackground = true)
+@Preview(showSystemUi = true)
 @Composable
 private fun ContentViewErrorPreview() {
     EyeScanSoloSDKQuickstartTheme {

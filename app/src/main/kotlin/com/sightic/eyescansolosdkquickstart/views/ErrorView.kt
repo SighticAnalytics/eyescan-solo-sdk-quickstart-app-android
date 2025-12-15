@@ -30,7 +30,7 @@ fun ErrorView(errorMessage: String, onAction: (Action) -> Unit) {
     }
 }
 
-@Preview(showBackground = true)
+@Preview(showSystemUi = true)
 @Composable
 private fun StartViewPreview() {
     EyeScanSoloSDKQuickstartTheme { ErrorView("Something went wrong...") {} }
