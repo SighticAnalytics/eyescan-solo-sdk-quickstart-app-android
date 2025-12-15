@@ -20,23 +20,18 @@ fun ErrorView(errorMessage: String, onAction: (Action) -> Unit) {
         Header(
             title = stringResource(R.string.error),
             subtitle = errorMessage,
-            backgroundColor = Red
+            backgroundColor = Red,
         )
         HugeButton(
             text = stringResource(R.string.done),
-            modifier = Modifier
-                .align(Alignment.Center),
-            onClick = {
-                onAction.invoke(Action.OnDoneClicked)
-            }
+            modifier = Modifier.align(Alignment.Center),
+            onClick = { onAction.invoke(Action.OnDoneClicked) },
         )
     }
 }
 
-@Preview(showBackground = true)
+@Preview(showSystemUi = true)
 @Composable
 private fun StartViewPreview() {
-    EyeScanSoloSDKQuickstartTheme {
-        ErrorView("Something went wrong...") { }
-    }
+    EyeScanSoloSDKQuickstartTheme { ErrorView("Something went wrong...") {} }
 }

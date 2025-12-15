@@ -13,18 +13,27 @@ import kotlinx.coroutines.launch
 
 sealed class Screen {
     data object Loading : Screen()
+
     data object Start : Screen()
+
     data object Scan : Screen()
+
     data object Inference : Screen()
+
     data class Result(val hasImpairment: Boolean) : Screen()
+
     data class Error(val error: SighticError) : Screen()
+
     data class DeviceUnsupported(val status: SighticSupportedDevice.Status) : Screen()
 }
 
 sealed interface Action {
     data class OnDeviceSupportedStatusReceived(val status: SighticSupportedDevice.Status) : Action
+
     data object OnStartScanClicked : Action
+
     data class OnResultReceived(val result: SighticResult<SighticRecording>) : Action
+
     data object OnDoneClicked : Action
 }
 
@@ -54,15 +63,11 @@ class MainViewModel : ViewModel() {
     private fun inferResult(result: SighticResult<SighticRecording>) {
         _screen.update { Screen.Inference }
         when (result) {
-            is SighticResult.Failure -> _screen.update {
-                Screen.Error(result.error)
-            }
+            is SighticResult.Failure -> _screen.update { Screen.Error(result.error) }
 
             is SighticResult.Success -> {
                 viewModelScope.launch {
-                    val inferenceResult = result.value.performInference(
-                        BuildConfig.API_KEY
-                    )
+                    val inferenceResult = result.value.performInference(BuildConfig.API_KEY)
 
                     when (inferenceResult) {
                         is SighticResult.Failure ->

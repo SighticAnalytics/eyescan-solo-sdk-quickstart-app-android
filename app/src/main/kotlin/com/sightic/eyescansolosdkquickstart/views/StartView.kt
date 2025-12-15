@@ -19,22 +19,18 @@ fun StartView(onAction: (Action) -> Unit) {
     Box(Modifier.fillMaxSize()) {
         Header(
             stringResource(R.string.app_name),
-            stringResource(R.string.eyescan_solo_sdk_version, LibraryVersion.description)
+            stringResource(R.string.eyescan_solo_sdk_version, LibraryVersion.description),
         )
         HugeButton(
             text = stringResource(R.string.start_scan),
             modifier = Modifier.align(Alignment.Center),
-            onClick = {
-                onAction.invoke(Action.OnStartScanClicked)
-            }
+            onClick = { onAction.invoke(Action.OnStartScanClicked) },
         )
     }
 }
 
-@Preview(showBackground = true)
+@Preview(showSystemUi = true)
 @Composable
 private fun StartViewPreview() {
-    EyeScanSoloSDKQuickstartTheme {
-        StartView {}
-    }
+    EyeScanSoloSDKQuickstartTheme { StartView {} }
 }

@@ -17,7 +17,7 @@ fun HugeButton(text: String, modifier: Modifier = Modifier, onClick: () -> Unit)
     Button(
         modifier = modifier,
         onClick = onClick,
-        colors = ButtonDefaults.buttonColors().copy(containerColor = Blue)
+        colors = ButtonDefaults.buttonColors().copy(containerColor = Blue),
     ) {
         Text(
             text,

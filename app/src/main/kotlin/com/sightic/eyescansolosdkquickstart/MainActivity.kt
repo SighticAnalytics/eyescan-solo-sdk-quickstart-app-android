@@ -17,10 +17,6 @@ class MainActivity : ComponentActivity() {
                 detectDarkMode = { false },
             )
         )
-        setContent {
-            EyeScanSoloSDKQuickstartTheme {
-                MainScreen()
-            }
-        }
+        setContent { EyeScanSoloSDKQuickstartTheme { MainScreen() } }
     }
 }

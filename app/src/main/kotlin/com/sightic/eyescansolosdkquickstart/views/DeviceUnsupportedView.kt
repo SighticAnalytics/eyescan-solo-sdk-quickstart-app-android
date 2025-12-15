@@ -20,15 +20,12 @@ import com.sightic.eyescansolosdkquickstart.ui.theme.EyeScanSoloSDKQuickstartThe
 @Composable
 fun DeviceUnsupportedView(statusMessage: String) {
     Box(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(horizontal = 16.dp),
-        contentAlignment = Alignment.Center
+        modifier = Modifier.fillMaxSize().padding(horizontal = 16.dp),
+        contentAlignment = Alignment.Center,
     ) {
         Column(
-            modifier = Modifier
-                .align(BiasAlignment(horizontalBias = 0f, verticalBias = -0.5f)),
-            horizontalAlignment = Alignment.CenterHorizontally
+            modifier = Modifier.align(BiasAlignment(horizontalBias = 0f, verticalBias = -0.5f)),
+            horizontalAlignment = Alignment.CenterHorizontally,
         ) {
             Text(
                 text = stringResource(R.string.device_unsupported_title),
@@ -46,7 +43,7 @@ fun DeviceUnsupportedView(statusMessage: String) {
     }
 }
 
-@Preview(showBackground = true)
+@Preview(showSystemUi = true)
 @Composable
 private fun DeviceUnsupportedViewPreview() {
     EyeScanSoloSDKQuickstartTheme {
