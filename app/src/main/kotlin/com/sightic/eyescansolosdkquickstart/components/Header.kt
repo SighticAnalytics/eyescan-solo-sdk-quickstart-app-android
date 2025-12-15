@@ -12,28 +12,16 @@ import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
-import com.sightic.eyescansolosdkquickstart.ui.theme.Gray
 import com.sightic.eyescansolosdkquickstart.ui.theme.EyeScanSoloSDKQuickstartTheme
+import com.sightic.eyescansolosdkquickstart.ui.theme.Gray
 
 @Composable
 fun Header(title: String, subtitle: String, backgroundColor: Color = Gray) {
-    Column(
-        modifier = Modifier
-            .fillMaxWidth()
-            .background(backgroundColor)
-            .safeContentPadding()
-    ) {
+    Column(modifier = Modifier.fillMaxWidth().background(backgroundColor).safeContentPadding()) {
         CompositionLocalProvider(LocalContentColor provides Color.White) {
-            Text(
-                text = title,
-                style = MaterialTheme.typography.headlineMedium
-            )
-            Text(
-                text = subtitle,
-                style = MaterialTheme.typography.titleMedium
-            )
+            Text(text = title, style = MaterialTheme.typography.headlineMedium)
+            Text(text = subtitle, style = MaterialTheme.typography.titleMedium)
         }
-
     }
 }
 

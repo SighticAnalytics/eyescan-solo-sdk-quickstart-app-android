@@ -10,10 +10,7 @@ import com.sightic.eyescansolosdkquickstart.viewmodel.Action
 import com.sightic.eyescansolosdkquickstart.viewmodel.Screen
 
 @Composable
-fun ContentView(
-    screen: Screen,
-    onAction: (Action) -> Unit
-) {
+fun ContentView(screen: Screen, onAction: (Action) -> Unit) {
     when (screen) {
         is Screen.Start -> StartView(onAction)
         is Screen.Scan -> ScanView(onAction)
@@ -23,60 +20,36 @@ fun ContentView(
         is Screen.DeviceUnsupported -> DeviceUnsupportedView(screen.status.asReadableStatus())
         Screen.Loading -> LoadingView()
     }
-
 }
 
 @Preview(showBackground = true)
 @Composable
 private fun ContentViewPreview() {
-    EyeScanSoloSDKQuickstartTheme {
-        ContentView(
-            screen = Screen.Start,
-            onAction = {}
-        )
-    }
+    EyeScanSoloSDKQuickstartTheme { ContentView(screen = Screen.Start, onAction = {}) }
 }
 
 @Preview(showBackground = true)
 @Composable
 private fun ContentViewInferencePreview() {
-    EyeScanSoloSDKQuickstartTheme {
-        ContentView(
-            screen = Screen.Inference,
-            onAction = {}
-        )
-    }
+    EyeScanSoloSDKQuickstartTheme { ContentView(screen = Screen.Inference, onAction = {}) }
 }
 
 @Preview(showBackground = true)
 @Composable
 private fun ContentViewResultPositivePreview() {
-    EyeScanSoloSDKQuickstartTheme {
-        ContentView(
-            screen = Screen.Result(true),
-            onAction = {}
-        )
-    }
+    EyeScanSoloSDKQuickstartTheme { ContentView(screen = Screen.Result(true), onAction = {}) }
 }
 
 @Preview(showBackground = true)
 @Composable
 private fun ContentViewResultNegativePreview() {
-    EyeScanSoloSDKQuickstartTheme {
-        ContentView(
-            screen = Screen.Result(false),
-            onAction = {}
-        )
-    }
+    EyeScanSoloSDKQuickstartTheme { ContentView(screen = Screen.Result(false), onAction = {}) }
 }
 
 @Preview(showBackground = true)
 @Composable
 private fun ContentViewErrorPreview() {
     EyeScanSoloSDKQuickstartTheme {
-        ContentView(
-            screen = Screen.Error(AlignmentError.AltitudeTooLow),
-            onAction = {}
-        )
+        ContentView(screen = Screen.Error(AlignmentError.AltitudeTooLow), onAction = {})
     }
 }

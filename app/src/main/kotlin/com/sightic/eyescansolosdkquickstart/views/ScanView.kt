@@ -6,7 +6,5 @@ import com.sightic.eyescansolosdkquickstart.viewmodel.Action
 
 @Composable
 fun ScanView(onAction: (Action) -> Unit) {
-    SighticView {
-        onAction.invoke(Action.OnResultReceived(it))
-    }
+    SighticView { onAction.invoke(Action.OnResultReceived(it)) }
 }

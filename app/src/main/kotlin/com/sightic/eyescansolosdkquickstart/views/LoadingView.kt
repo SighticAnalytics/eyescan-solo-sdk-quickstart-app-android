@@ -10,16 +10,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.sightic.eyescansolosdkquickstart.ui.theme.Gray
 import com.sightic.eyescansolosdkquickstart.ui.theme.EyeScanSoloSDKQuickstartTheme
+import com.sightic.eyescansolosdkquickstart.ui.theme.Gray
 
 @Composable
 fun LoadingView() {
     Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
         CircularProgressIndicator(
-            modifier = Modifier
-                .align(Alignment.Center)
-                .size(80.dp),
+            modifier = Modifier.align(Alignment.Center).size(80.dp),
             color = Gray,
             trackColor = Gray.copy(alpha = 0.1f),
             strokeCap = StrokeCap.Round,
@@ -31,7 +29,5 @@ fun LoadingView() {
 @Preview
 @Composable
 private fun LoadingViewPreview() {
-    EyeScanSoloSDKQuickstartTheme {
-        LoadingView()
-    }
+    EyeScanSoloSDKQuickstartTheme { LoadingView() }
 }

@@ -13,13 +13,10 @@ import com.sightic.eyescansolosdkquickstart.viewmodel.MainViewModel
 import com.sightic.eyescansolosdkquickstart.views.ContentView
 import kotlinx.coroutines.launch
 
-
 @Composable
 fun MainScreen() {
-
     val context = LocalContext.current
     val scope = rememberCoroutineScope()
-
     val viewModel = viewModel<MainViewModel>()
     val screen by viewModel.screen.collectAsStateWithLifecycle()
 
@@ -30,9 +27,5 @@ fun MainScreen() {
         }
     }
 
-    ContentView(
-        screen = screen,
-        onAction = viewModel::onAction
-    )
+    ContentView(screen = screen, onAction = viewModel::onAction)
 }
-
