@@ -1,20 +1,22 @@
 [versions]
 agp = "8.13.2"
-eyescansolosdk = "3.2.0"
 kotlin = "2.2.21"
 coreKtx = "1.17.0"
-lifecycleRuntimeKtx = "2.10.0"
-activityCompose = "1.12.1"
 composeBom = "2025.12.00"
+activityCompose = "1.12.1"
+lifecycleRuntimeKtx = "2.10.0"
+eyescansolosdk = "3.2.0"
 
 [libraries]
-androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
-androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleRuntimeKtx" }
-eyescansolosdk = { module = "com.sightic:eyescansolosdk", version.ref = "eyescansolosdk" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
-androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleRuntimeKtx" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+eyescansolosdk = { module = "com.sightic:eyescansolosdk", version.ref = "eyescansolosdk" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
